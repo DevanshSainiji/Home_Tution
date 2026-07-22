@@ -6,7 +6,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Button } from "@/components/ui/Button";
-import { Phone, MessageCircle, Award, BookOpen } from "lucide-react";
+import { Phone, Award, BookOpen } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 export function About() {
   const vijay = siteData.tutors[0];
@@ -75,7 +76,7 @@ export function About() {
                     className="w-full sm:w-auto"
                     onClick={() => window.open(`https://wa.me/91${vijay.phone}`, "_blank")}
                   >
-                    WhatsApp <MessageCircle size={14} className="ml-2 text-[#25D366]" />
+                    WhatsApp <WhatsAppIcon size={14} className="ml-2 text-[#25D366]" />
                   </Button>
                 </div>
               </div>
@@ -133,7 +134,7 @@ export function About() {
                     className="w-full sm:w-auto"
                     onClick={() => window.open(`https://wa.me/91${ashok.phone}`, "_blank")}
                   >
-                    WhatsApp <MessageCircle size={14} className="ml-2 text-[#25D366]" />
+                    WhatsApp <WhatsAppIcon size={14} className="ml-2 text-[#25D366]" />
                   </Button>
                 </div>
               </div>

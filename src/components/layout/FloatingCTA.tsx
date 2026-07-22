@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
@@ -90,7 +91,7 @@ export function FloatingCTA() {
             {/* Pulse Effect */}
             <div className="absolute inset-0 rounded-full border-2 border-[#25D366] animate-ping opacity-20"></div>
             
-            <MessageCircle size={22} fill="currentColor" />
+            <WhatsAppIcon size={22} fill="currentColor" />
             <span className="font-semibold text-sm hidden sm:block">Chat Now</span>
           </a>
         </motion.div>

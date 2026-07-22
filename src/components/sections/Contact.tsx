@@ -5,7 +5,8 @@ import { siteConfig } from "@/config/site";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
-import { Phone, MessageCircle, Clock, Send, CheckCircle } from "lucide-react";
+import { Phone, Clock, Send, CheckCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -101,7 +102,7 @@ export function Contact() {
                       <Phone size={20} /> {siteConfig.tutors.vijay.phone}
                     </a>
                     <a href={`https://wa.me/91${siteConfig.tutors.vijay.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
-                      <MessageCircle size={20} /> WhatsApp
+                      <WhatsAppIcon size={20} /> WhatsApp
                     </a>
                   </div>
                 </div>
@@ -113,7 +114,7 @@ export function Contact() {
                       <Phone size={20} /> {siteConfig.tutors.ashok.phone}
                     </a>
                     <a href={`https://wa.me/91${siteConfig.tutors.ashok.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-70 transition-opacity">
-                      <MessageCircle size={20} /> WhatsApp
+                      <WhatsAppIcon size={20} /> WhatsApp
                     </a>
                   </div>
                 </div>

@@ -1,4 +1,5 @@
-import { BookOpen, Calculator, Atom, Home, UserCheck, MessageCircle, FileText, CheckCircle } from "lucide-react";
+import { BookOpen, Calculator, Atom, Home, UserCheck, FileText, CheckCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 export const siteData = {
   hero: {
@@ -68,7 +69,7 @@ export const siteData = {
     {
       title: "Doubt Clearing",
       description: "Instant doubt resolution. WhatsApp support between sessions.",
-      icon: MessageCircle
+      icon: WhatsAppIcon
     }
   ],
   features: [

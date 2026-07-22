@@ -6,7 +6,8 @@ import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/Button";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 
 export function Hero() {
   const { hero } = siteData;
@@ -61,7 +62,7 @@ export function Hero() {
               className="w-full sm:w-auto"
               onClick={() => window.open(`https://wa.me/91${siteConfig.tutors.vijay.whatsapp}`, "_blank")}
             >
-              WhatsApp <MessageCircle className="ml-2 text-[#25D366]" size={18} />
+              WhatsApp <WhatsAppIcon className="ml-2 text-[#25D366]" size={18} />
             </Button>
             <Button 
               variant="outline" 
